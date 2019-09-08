@@ -1,11 +1,11 @@
 <h1>Burgers</h1>
 
 
-<section class ="container">
+<section>
 
   <div class="row">
-    <div class="col-md-6" id="uneaten"></div>
-      <h2>Burger Menu:</h2>
+    <div class="col-md-6" id="uneaten">
+      <h3>Burger Menu:</h3>
 
       <ul>
         {{#each burgers}}
@@ -13,15 +13,17 @@
             <li>
               {{burger_name}}
 
-              <button class="delete-burger" data-id="{{this.id}}">DEVOUR!</button>
+              <button class="devour-burger" data-id="{{this.id}}">DEVOUR!</button>
             </li>
           {{/unless}}
         {{/each}}
       </ul>
-
     </div>
 
+
+
     <div class="col-md-6" id="eaten">
+      <h3>Burgers Devoured!</h3>
       <ul>
         {{#each burgers}}
           {{#if devoured}}
@@ -34,9 +36,10 @@
     </div>
   </div>
 
+
   <div class="row">
-    <div class="col-md-12"></div>
-      <h2>Add a Burger</h2>
+    <div class="col-md-12">
+      <h3>Add a Burger</h3>
       <form class="create-form">
 
         <div class="form-group">
