@@ -1,0 +1,11 @@
+body {
+    background-color: #ffc505;
+};
+
+.burgerTitle {
+    text-align: center;
+};
+
+h1 {
+    display: inline-block;
+};
